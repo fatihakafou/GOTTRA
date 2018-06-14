@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="fragments/layout">
+    <head>
+        <title>Roles list</title>       
+        <meta charset="UTF-8"/>
+        <!-- 
+        <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+         -->
+        
+        <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css" th:href="@{css/bootstrap-theme.min.css}" />   
+    </head>
+    <body>
+      <section layout:fragment="content">
+      	<h1>Liste des utilisateurs/roles</h1>  
+       	<form th:action="@{usersRoles}" method="get" >
+	         <br></br>  
+        	<div class="form-group">
+	           <label> Utilisateur: </label>
+	           <input type="text" name="motCle" th:value="${motCle}"></input>
+	           <button type="submit">Chercher</button>
+	        </div>
+       	</form>
+     	</div>
+     	<div class="container ">
+         	<link th:href="@{css/main.css}" rel="stylesheet"/> 	
+  	         <a th:href="@{/roleForm}">Nouveau</a>              
+          <div>
+             <!-- <table class="table table-striped">  table stripped change les couleurs des lignes en alternance-->
+             
+  
+             <table class="table">            
+               <tr>   
+               	 <th>ID</th>          
+                 <th>Utilisateur</th>               
+                 <th>Role</th>   
+                 <th >Actions</th>    
+                 <th ></th>     
+               </tr> 
+                
+               <tr th:each=p:${Usersroles.content}>
+               		<td th:text="${p.id}"></td>
+               		<td th:text="${p.user}"></td>
+               		<td th:text="${p.role}"></td>
+
+               		<td>
+               			<a onclick="return confirm('Do you confirm raw delete?')" 
+               				th:href="@{/roleDelete(id=${p.id},page=${pageCourante},size=${size},motCle=${motCle})}">
+               				Supprimer
+               			</a>
+               		</td> 
+               		 
+               
+               </tr>
+        
+             </table> 
+                  
+           </div> 
+
+           <div >
+	         <ul class="nav nav-pills" >
+	           <li th:each="p:${pages}" th:class="${p==pageCourante}?active:''" >
+	             <a th:text="${p}" th:href="@{usersRoles(page=${p},motCle=${motCle})}"> </a>
+	           </li>
+	         </ul>
+	       </div> 
+
+
+
+            <br></br>
+       		<br></br>     
+       </div>
+
+       </section>
+
+
+    </body>
+  </html>

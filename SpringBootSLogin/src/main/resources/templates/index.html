@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="fragments/layout">
+    <head>
+        <title>Gottra+ Home</title>       <meta charset="UTF-8"/>       
+    </head>
+    <body>
+     <section layout:fragment="content">
+     	<div class="container spacer-form">
+	     	<h1>Hello Spring Security</h1>
+	    	<p>Page d'acueil accessible pour tout le monde. L'accès aux autres fonctions nécessite une connexion.</p>
+	    	<p>
+	    		Pour gérer les utilisateurs il faut avoir le rôle ADMIN 
+	    	</p>
+	    	<p>
+    			Les mots de passe ne sont pas cryptés dans la base 
+    		</p>
+    		<p>
+    			Les droits  sont  gérés  
+    		</p>
+    		<p>
+    			Les messages dans le cas d'erreur de saisi  fonctionnent   
+    		</p>
+    		<p>
+    			pour gérer les accents ajouter /meta charset="utf-8"/ dans la section   
+    		</p>
+		    <ul>
+		        <li>Go to the <a href="/user" th:href="@{/user}">secured pages</a></li>
+		    </ul>
+		    <br></br>
+     	
+     	</div>
+        
+  	</section>  
+      
+  </body>
+</html>

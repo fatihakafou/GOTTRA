@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="fragments/layout">
+    <head>
+        <title>Files Upload</title>       
+        <meta charset="UTF-8"/>
+        <!-- 
+        <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+         -->        
+        <link rel="stylesheet" href="../static/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}"/>
+		<link rel="stylesheet" href="../static/css/bootstrap-theme.min.css" th:href="@{css/bootstrap-theme.min.css}" />
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css" th:href="@{css/main.css}" />  
+    </head>
+	<body onload ="updatesize();">
+		<section layout:fragment="content">
+			<h1>Gestion des fichiers</h1>	
+		
+			<div>
+				<div class= "panel panel-default">
+					<div class="panel-heading">
+						<p>Téléchargement</p>
+					</div>
+					<div class="panel-body">
+						<form th:action="@{fileUpload}" method="post"  enctype="multipart/form-data">
+								
+							<div class="form-group">
+								<label class="control-label">Fichier:</label>
+								<input id="fileInput" type="file" name="uploadingFiles" onchange="updateSize();" multiple></input>
+								<!--  
+								<input id="fileInput" type="file" name="uploadingFiles" onchange="updateSize();" multiple></input>
+								-->
+							</div>
+							<div>	
+								<p>
+								selected files: <span id="fileNum">0</span>	</p>
+								total size: <span id="fileSize">0</span>
+							</div>		
+							<div>
+								<button type="submit" class="btn btn-primary">Télécharger</button>
+								<!-- <input id = "readfiles" class="btn btn-primary" onclick="readAll()" type="button" value="Lire fichiers"/> -->
+							</div>																																																																											
+						</form>
+						<script type="text/javascript" th:src="@{/js/downloadedFiles.js}"></script>
+					</div>
+				</div>
+			</div>
+       </section>
+	</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="fragments/layout">
+    <head>
+        <title>Files Upload</title>       
+        <meta charset="UTF-8"/>
+        <!-- 
+        <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+         -->        
+        <link rel="stylesheet" href="../static/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}"/>
+		<link rel="stylesheet" href="../static/css/bootstrap-theme.min.css" th:href="@{css/bootstrap-theme.min.css}" />
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css" th:href="@{css/main.css}" />  
+    </head>
+	<body onload ="updatesize();">
+		<section layout:fragment="content">
+			<h1>Téléchargement</h1>	
+		
+			<div class="col-md-6 col-sm-6 col-xs-12 spacer col-md-offset-3">
+				<div class= "panel panel-default">
+					<div class="panel-heading">
+						<p>Téléchargement de fichiers</p>
+					</div>
+					<div class="panel-body">
+						<form th:action="@{fileUpload}" method="post"  enctype="multipart/form-data">
+								
+							<div class="form-group">
+								<label class="control-label">Fichier:</label>
+								<input id="fileInput" type="file" name="uploadingFiles" onchange="updateSize();" multiple></input>
+								<!--  
+								<input id="fileInput" type="file" name="uploadingFiles" onchange="updateSize();" multiple></input>
+								-->
+							</div>
+							<div>	
+								<p>
+								selected files: <span id="fileNum">0</span>	</p>
+								total size: <span id="fileSize">0</span>
+							</div>		
+							<div>
+								<button type="submit" class="btn btn-primary">Télécharger</button>
+							</div>
+							<!-- ************************************************ -->
+							<!-- Uploaded files in folder -->
+							<!-- ************************************************ -->
+							<!--  
+							<div>
+								<div>Uploaded files: </div>
+								<ul th:each="uploadingFiles : ${files}">
+									<li> 	
+										<a th:href="${uploadingFiles}" th:text="${uploadingFiles}" />
+									</li>
+								</ul>								
+							</div>	
+							-->																																																																																					
+						</form>
+						<script>
+							function updateSize() {
+				                var nBytes = 0,
+				                        oFiles = document.getElementById("fileInput").files,
+				                        nFiles = oFiles.length;
+				                for (var nFileId = 0; nFileId < nFiles; nFileId++) {
+				                    nBytes += oFiles[nFileId].size;
+				                }
+	
+				                var sOutput = nBytes + " bytes";
+				                // optional code for multiples approximation
+				                for (var aMultiples = ["KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB"], nMultiple = 0, nApprox = nBytes / 1024; nApprox > 1; nApprox /= 1024, nMultiple++) {
+				                    sOutput = nApprox.toFixed(3) + " " + aMultiples[nMultiple] + " (" + nBytes + " bytes)";
+				                }
+				                // end of optional code
+	
+				                document.getElementById("fileNum").innerHTML = nFiles;
+				               
+				                document.getElementById("fileSize").innerHTML = sOutput;
+				            }
+						
+						</script>
+					</div>
+				</div>
+			</div>
+      	
+       </section>
+	
+	</body>
+</html>

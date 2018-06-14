@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>footer</title>
+
+        <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+    </head>
+
+    <body>
+      <div th:fragment="footer">
+       
+       		<div style="background: #dfdfde;">
+			<!--Footer-->
+			<footer class="page-footer blue center-on-small-only">	
+				<div class="container">
+		            <p>
+		                &copy; Bob.com
+		                <span sec:authorize="isAuthenticated()" style="display: inline-block;">
+		                    | Logged user: <span sec:authentication="name"></span> |
+		                    Roles: <span sec:authentication="principal.authorities"></span> |
+		                    <a th:href="@{/logout}">Sign Out</a>
+		                </span>
+		            </p>
+		        </div>
+
+          </footer>
+          <!--/.Footer-->   
+          </div>     
+       </div>
+    </body>
+</html>

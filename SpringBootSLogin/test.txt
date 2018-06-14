@@ -1,0 +1,23 @@
+﻿3.	Création de compte
+
+Nous décrivons dans ce paragraphe le processus de création d’un compte en fonction des profiles utilisateurs, par qui ce processus doit être géré.
+Ces processus s’appuieront sur une organisation hiérarchique forte, calquée sur les niveaux de qualification des équipes
+
+3.1.	Création d’un compte en fonction des profiles utilisateurs du projet Océanomics
+
+Nous décrivons ci-dessous le processus de création d’un compte en fonction des profiles utilisateurs, par qui ce processus doit être géré
+Ces processus s’appuieront sur une organisation hiérarchique forte, calquée sur les niveaux de qualification des équipes
+Dans un autre paragraphe, nous déclinerons ensuite, en fonction des profiles, les habilitations de ces utilisateurs, ce à quoi ils ont droit d’accéder, de réaliser et de produire
+
+3.1.1.	Description générale du processus de créations des utilisateurs (scientifiques)
+
+Dans le schéma de la page suivante, sont décrits les processus de créations pour les utilisateurs scientifiques (Experts, Confirmés et Novices).
+Les comptes « Administrateurs » et « Webmasters » sont quant à eux élaborés à l’initialisation de l’application.
+Le compte « Grand public » ne nécessite pas de procédure dédiée (cf. paragraphe 3.1.2 Compte Grand Public p22)
+
+3.1.6.	Compte Administrateur
+
+Le compte Utilisateur Administrateur (ADM) est créé par défaut lors de la mise en place de l’application
+Cet utilisateur Administrateur (ADM) ne peut pas créer d’autres comptes équivalents à son niveau Administrateur (ADM)
+Il peut par contre créer un ou plusieurs comptes Scientifique Expert (SU3) : ce point est à approfondir
+Il ne peut pas créer un ou plusieurs comptes Scientifique Novice (SU1), ni un ou plusieurs comptes Scientifique Confirmé (SU2) 

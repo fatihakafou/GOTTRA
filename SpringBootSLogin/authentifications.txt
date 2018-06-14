@@ -1,0 +1,869 @@
+
+2.	Objet du document
+
+
+L’objet de ce document est de détailler la gestion de la partie Habilitation – Authentification – Utilisation des Ressources en fonction des profils des futurs utilisateurs du projet Océanomix.
+
+ 
+
+2.1.	Les différents profils utilisateurs du projet Océanomics
+2.1.1.	Typologie des futurs utilisateurs Oceanomics
+Nous distinguons dans ce projet six types d’utilisateurs : 
+-	l’utilisateur Grand Public
+-	l’utilisateur Scientifique Novices
+-	l’utilisateur Scientifique Confirmé
+-	l’utilisateur Scientifique Expert
+-	l’Administrateur
+-	le Webmaster
+
+Nous ajoutons le webmaster (ou « webmèstre »), même si les fonctions de communication ne sont développées. En effet, ses fonctions importantes et son rôle sont à développer comme tous les cinq autres profils énoncés précédemment
+Pour ces différents types, on pourra utiliser, dans la suite du document ou le reste du projet, les abréviations ci-dessous :
+
+Type concerné (français)	Appellation anglophone équivalente	Abréviation (anglais)
+Utilisateur Grand Public	General Purpose User	GPU
+Utilisateur Scientifique Novice	Scientific Novice User	SU1
+Utilisateur Scientifique Confirmé	Scientific Confirmed User	SU2
+Utilisateur Scientifique Expert	Scientific Expert User	SU3
+Administrateur	Administrator	ADM
+Webmèstre	Webmaster	WMS
+
+Tous les utilisateurs doivent s’authentifier et donc être inscrits dans le système. Nous allons décrire les processus d’habilitation et d’authentification en fonction de l’appartenance de l’utilisateur à tel ou tel profile
+Dans les paragraphes ci-dessous, nous allons décrire précisément les six profiles, les critères d’appartenance à ces profiles, les actions possibles et impossibles du fait d’appartenir à un des six profiles, par rapport à soi-même et par rapport aux autres profiles
+
+2.1.2.	Description générale des profils
+
+Voici quelques règles générales qu’il faut retenir. Celles-ci sont illustrées dans le schéma de la page suivante et matérialisées par les flèches ci-dessous
+
+Règles générales	illustrations
+Les utilisateurs grand public consultent des informations sans calcul (texte, image, requêtes préparées)	 
+
+Les membres de Tara communiquent directement avec les experts	 
+
+Les scientifiques utilisateurs communiquent entres eux (publications, alertes, enrichissement)	 
+
+Le webmaster joue le rôle de modérateur (communications entres utilisateurs, il accède aux contenus et alertes)	 
+
+L’administrateur accède à la base et aux sources de dev, mais pas aux communications, formules et annotations qui sont cryptées	 
+
+
+
+ 
+Description des profils
+
+ 
+
+ 
+
+2.1.3.	UGP – Utilisateur Grand Public
+Cette catégorie désigne un utilisateur de base, aux droits minimaux du point de vue scientifique ou administratif. Pour cette catégorie d’utilisateurs, l’application doit proposer certaines informations généralistes, de vulgarisation scientifique (elle justifie en même temps la part d’investissements publics dans la constitution d’Oceanomics).
+Il aura accès à des données Grand Public non sensibles, essentiellement basées sur des communications à diffusion vers le plus grand nombre, des photos, des articles, des images, des animations. 
+Un certain nombre de données pré-calculées lui seront fournies. Des informations telles que les dernières nouvelles de l’expédition Tara en cours, ou des découvertes scientifiques à impacts forts lui seront exposées. 
+Il n’aura pas accès aux outils de calculs, aux données sensibles et aux recherches développées et réservées aux utilisateurs de type Scientifique (Novice, Confirmé, Expert), Administrateur, ni au périmètre réservé au Webmaster
+Les mécènes, artistes feront partie de cette catégorie Grand Public, sauf s’ils disposent de diplômes justifiant leur rattachement à la communauté scientifique et plus spécialement à un sujet de recherche sur Tara 
+
+2.1.4.	SU1 – SU2 –SU3 - Utilisateurs Scientifiques
+À la base, un utilisateur scientifique désigne un utilisateur inscrit aux services de l’application, devant normalement exercer une profession scientifique ou apparentée liée au projet ; il s’agit de l’utilisateur spécialisé pour lequel l’application a été mise en service, qui lit, exploite, met à jour, calcule, enrichie, annote des données scientifiques Oceanomics.
+Pour les besoins du projet, nous distinguons trois catégories d’utilisateurs scientifiques. Les différences entre les trois niveaux se font au niveau de l’accès aux données scientifiques, aux moteurs de calculs d’Oceanomics, aux résultats scientifiques obtenus (ou partageables), et enfin aux droits de gestion des comptes d’utilisateurs de niveaux inférieurs
+Les droits de téléchargement de données ne sont pas définis au moment de l’écriture de ce document.
+On définit les trois catégories scientifiques de la manière suivante, par ordre de responsabilité croissante :
+-	SU1 : Utilisateur Scientifique Novice 
+-	SU2 : Utilisateur Scientifique Confirmé
+-	SU3 : Utilisateur Scientifique Expert
+Les paragraphes suivants détaillent les profiles type de ces Utilisateurs Scientifiques 
+2.1.4.1.	SU1- Utilisateur Scientifique Novice
+Le profile de type Utilisateur Scientifique Novice (SU1) : il regroupe les thésards, ou doctorants, dont la thèse est en cours (rattachés administrativement ou non au laboratoire de recherche, et inscrits au niveau de la Fac, d’une école d’Ingénieur), les stagiaires effectuant un séjour de courte durée (quelques mois) dans le cadre de leur DEA. 
+Si la structure d’accueil a pour habitude d’accueillir d’autres stagiaires (stage ouvrier de 3ème par exemple), ceux-ci devront considérés comme relevant de la typologie Grand Public
+Certains thésards peuvent effectuer des campagnes de tests dans des laboratoires d’accueil pour des durées plus ou moins longues, mais ils conservent un rattachement administratif à leur laboratoire d’origine. 
+Nous proposons qu’ils cumulent alors, par rapport à leur habilitation originelle (structure « Normale »), une habilitation provisoire complémentaire dans la structure d’accueil (structure « Cible » temporaire). 
+Ce point est à approfondir et à trancher 
+
+Cette catégorie SU1 n’est pas recrutée en interne en CDI au niveau d’un organisme de 
+recherches. Elle bénéficie en général d’un CDD, d’une bourse de recherche attribuée sur une durée limitée (2 ans en général, renouvelable pour une année supplémentaire)
+Les activités de cette catégorie de Scientifique Novice ne présentent pas un caractère pérenne sur le projet Oceanomics tant qu’ils n’ont pas passé leur thèse. 
+Si leur thèse est soutenue et qu’ils souhaitent continuer sur le sujet Tara, alors ils migreront dans la catégorie Scientifique Confirmé
+
+Les Scientifiques Novices auront accès : 
+•	à tout les services de restitution de l’information
+•	aux méthodes de calculs : en utilisation d’outils de calcul de manière limitée 
+•	aux travaux publiés par les autres Scientifiques Novices, Confirmés et Experts.
+•	aux échanges cryptés entre Scientifiques Novices, s’ils font partie nommément de ces échanges
+ 
+Les Scientifiques Novices n’auront pas accès : 
+•	à l’activité, tracée sous forme de logs d’accès, du ou des autres Scientifiques Novices et de leurs supérieurs hiérarchiques (Confirmés et Experts).
+•	aux brouillons des travaux du ou des autres Scientifiques Novices et de leurs supérieurs hiérarchiques (Confirmés et Experts).
+•	aux travaux non publiés du ou des autres Scientifiques Novices et de leurs supérieurs hiérarchiques (Confirmés et Experts).
+•	aux autres échanges cryptés entre les Scientifiques Novices, Confirmés et Experts 
+
+Le tableau « Conséquence des habilitations » de la partie Habilitation donne une vue des possibilités des domaines d’intervention de ce type d’utilisateur 
+
+2.1.4.2.	SU2 - Utilisateur Scientifique Confirmé
+Le profile de type Utilisateur Scientifique Confirmé (SU2) : il regroupe les Professeurs (au niveau Fac ou Ecole d’Ingénieurs), les Chercheurs (Chargés de Recherche), les enseignants (Maitres de Conférence), les Ingénieurs d’Etudes, les Ingénieurs de Recherche, les Techniciens, les post-Docs (docteurs ayant soutenus leur thèse et effectuant des recherches complémentaires dans le domaine Oceanomics), les docteurs dont la qualification correspond à un des sujets de recherche Tara
+Pour résumer et ne froisser aucune classification professionnelle : ils sont recrutés en interne en CDI au niveau d’un organisme de recherche
+ Ces scientifiques participent en laboratoire ou sur le terrain aux activités Tara.
+Les activités de cette catégorie de Scientifique Confirmé présentent un caractère pérenne sur le projet Tara
+
+Si un Scientifique Novice est détaché d’une autre structure et rattaché provisoirement à un laboratoire d’accueil, ce Scientifique Novice sera rattaché de manière complémentaire et temporaire à un Scientifique Confirmé de la structure d’accueil
+Ce Scientifique Confirmé aura donc une visibilité sur 
+•	Les activités des Scientifiques Novices qui font partie de son équipe de recherche et dont il est le responsable hiérarchique permanent le temps de leurs thèses
+•	Les activités des Scientifiques Novices qui font partie temporairement de son équipe de recherche et dont il est le responsable hiérarchique le temps du détachement. Il ne verra pas les données de son périmètre initial (point à débattre). Il devra faire la demande à son supérieur hiérarchique initial
+
+Après le départ du Scientifique Novice du service de rattachement temporaire, le Scientifique Confirmé verra son habilitation temporaire suspendue par rapport au Scientifique Novice. 
+Il ne verra alors que les données publiées par le Scientifique Novice
+
+Il ne verra plus alors les données privées, les brouillons non publiées par le Scientifique Novice reparti dans sa structure d’accueil originelle, sauf si le Scientifique Novice souhaite transmettre ses résultats à ce supérieur hiérarchique temporaire 
+
+Ces points sont à débattre et à confirmer
+
+L’utilisateur Scientifique Confirmé aura une visibilité totale sur : 
+•	l’activité, tracée sous forme de logs d’accès, du ou des Scientifiques Novices dont il aura la responsabilité hiérarchique directe ou temporaire le temps du détachement sur son périmètre d’intervention.
+•	les brouillons des travaux du ou des Scientifiques Novices dont il aura la responsabilité hiérarchique directe ou temporaire le temps du détachement sur son périmètre d’intervention.
+•	les travaux publiés ou non du ou des Scientifiques Novices dont il aura la responsabilité hiérarchique directe ou temporaire le temps du détachement sur son périmètre d’intervention.
+•	Des échanges cryptés entre Scientifiques Confirmés, s’il fait partie nommément de ces échanges
+
+L’utilisateur Scientifique Confirmé n’aura pas de visibilité : 
+•	de l’activité, tracée sous forme de logs d’accès, du ou des Scientifiques Confirmés et Experts, encore moins du profile Administrateur.
+•	Des brouillons des travaux du ou des Scientifiques Confirmés et Experts.
+•	Des travaux non publiés du ou des Scientifiques Confirmés et Experts.
+•	Des échanges cryptés entre Scientifiques Novices (détachés ou initialement présent dans l’équipe), même s’il est leur supérieur hiérarchique, ainsi qu’au niveau de leurs supérieurs hiérarchiques (Experts)
+
+2.1.4.3.	SU3 - Utilisateur Scientifique Expert 
+Le profile de type Utilisateur Scientifique Expert (SU3) : il regroupe les Directeurs de Recherche, les personnes ayant participé scientifiquement (Ingénieurs, Techniciens) ou ayant généré des mesures scientifiques lors d’une expédition Tara. 
+Les artistes invités lors des expéditions Tara ne sont pas concernés par cette catégorie
+Les activités de cette catégorie de Scientifique Expert présentent un caractère pérenne sur le projet Tara
+L’utilisateur Scientifique Expert aura une visibilité partielle de l’activité du ou des Scientifiques Confirmés dont il aura la responsabilité hiérarchique directe.
+Il verra les travaux qui auront été publiés par les Scientifiques Confirmés 
+Il ne verra pas les travaux non encore publiés par les Scientifiques Confirmés
+
+Dans le cas où un Scientifique Confirmé fait l’objet, comme les Scientifiques Novices, d’un détachement temporaire dans une structure d’accueil pour divers raisons (spécialisation, campagne de tests), nous suggérons qu’une deuxième habilitation temporaire supplémentaire lui soit accordée par un Scientifique Expert de la structure d’accueil. Ce point est à approfondir et à trancher
+
+Si un Scientifique Confirmé est détaché d’une autre structure et rattaché provisoirement à un laboratoire d’accueil, ce Scientifique Confirmé sera rattaché de manière supplémentaire et temporaire à un Scientifique Expert de la structure d’accueil
+Ce scientifique Expert aura donc une visibilité partielle sur 
+•	Les activités publiées des Scientifiques Confirmés qui font partie de son équipe de recherche et dont il est le responsable hiérarchique permanent le temps de leurs activités 
+•	Les activités publiées des Scientifiques Confirmés qui font partie temporairement de son équipe de recherche et dont il est le responsable hiérarchique le temps du détachement. Il ne verra pas les données de son périmètre initial (point à débattre). Il devra faire la demande à son supérieur hiérarchique initial
+
+Après le départ du Scientifique Confirmé du service de rattachement temporaire, le Scientifique Expert verra son habilitation temporaire suspendue par rapport au Scientifique Confirmé. 
+Il ne verra alors que les données publiées par le Scientifique Confirmé
+
+Il ne verra plus alors les données privées, les brouillons non publiées par le Scientifique Confirmé reparti dans sa structure d’accueil originelle, sauf si le Scientifique Confirmé souhaite transmettre ses résultats à ce supérieur hiérarchique temporaire 
+
+Ces points sont à débattre et à confirmer
+
+L’utilisateur Scientifique Expert aura une visibilité totale sur : 
+•	l’activité, tracée sous forme de logs d’accès, du ou des Scientifiques Novices et Confirmés dont il aura la responsabilité hiérarchique directe ou temporaire le temps du détachement sur son périmètre d’intervention.
+•	les brouillons des travaux du ou des Scientifiques Novices et Confirmés dont il aura la responsabilité hiérarchique directe ou temporaire le temps du détachement sur son périmètre d’intervention.
+•	les travaux publiés du ou des Scientifiques Novices et Confirmés dont il aura la responsabilité hiérarchique directe ou temporaire le temps du détachement sur son périmètre d’intervention.
+•	aux échanges cryptés entre Scientifiques Experts, s’il fait partie nommément de ces échanges
+
+L’utilisateur Scientifique Expert n’aura pas accès : 
+•	à l’activité, tracée sous forme de logs d’accès, du ou des Scientifiques Experts, encore moins du profile Administrateur.
+•	aux brouillons des travaux du ou des Scientifiques Experts.
+•	aux travaux non publiés du ou des Scientifiques Experts.
+•	aux échanges cryptés entre Scientifiques Novices et Confirmés, même s’il est leur supérieur hiérarchique (temporaire ou définitif) 
+Nous voyons que des sources de conflits entre Scientifiques Confirmés et Scientifiques Experts sont possibles, au temps il est nécessaire de définir de manière détaillée les périmètres de responsabilité de chaque catégorie de Scientifiques
+
+La présence d’une charte d’Engagement de Confidentialité, un code morale de bonne conduite est donc nécessaire et doit être accepté par tous les acteurs 
+La transmission de certaines données d’un type d’utilisateur Scientifique vers un autre type doit toujours être sous-pesée, et transmise en connaissances de cause
+
+Une certaine confidentialité des échanges doit être garantie pour tout les profiles d’utilisateurs du projet Oceanomics
+
+2.1.5.	ADM - Utilisateur Administrateur
+Cette catégorie est réservée à un utilisateur dédié qui aura une activité d’Administration du site. Il n’aura pas accès aux contenus scientifiques, dans la mesure où il n’a pas de rôle scientifique
+Cet Administrateur pourra 
+•	mettre à jour la base de données, du point de vue structure des tables et des indexes associés de la base
+•	avoir accès à l’activité, tracée sous forme de logs d’accès, du ou des Scientifiques Novices, Confirmés et Experts
+•	aux échanges cryptés entre Scientifiques Novices, Confirmés et Experts, s’il fait partie nommément de ces échanges
+
+Cet Administrateur n’aura pas accès : 
+•	aux brouillons des travaux du ou des Scientifiques Novices, Confirmés et Experts 
+•	aux travaux non publiés du ou des Scientifiques Novices, Confirmés et Experts
+•	aux travaux publiés du ou des Scientifiques Novices, Confirmés et Experts
+•	aux échanges cryptés entre Scientifiques Novices, Confirmés et Experts, s’il ne fait pas partie nommément de ces échanges
+•	à la mise à jour des données, du point de vue valeur des données
+
+Ces points ci-dessus sont ouverts à discussion
+ 
+2.1.6.	WMS - Utilisateur Webmaster 
+Dans le cas où les fonctions de communication sont retenues, la présence d’un Webmaster est indispensable. 
+Le profil de ce Webmaster est à définir : sa fonction ne se limite qu’à une approche publication, gestion administrative pure des données publiées
+
+L’utilisateur Webmaster est un gestionnaire de contenu. Il n’a pas obligatoirement l’entière expertise technique ou métier d’Oceanomics, mais il a la main sur le contenu de l’application et contribue à la « faire vivre » et à la mettre à jour. On le distingue de l’Administrateur car son activité est différente et complémentaire des précédents.
+On ne définit pas ici le nombre d’utilisateurs relevant de ce type, au moment de l’écriture de ce document, mais on se laisse la possibilité de l’attribuer à plusieurs utilisateurs.
+
+Le Webmaster aura une visibilité totale sur : 
+•	l’activité, tracée sous forme de logs d’accès, du ou des Scientifiques Novices, Confirmés, Experts et Administrateur
+•	les échanges cryptés entre Scientifiques Novices, Confirmés et Experts 
+•	les travaux publiés du ou des Scientifiques Novices, Confirmés et Experts
+•	les brouillons des travaux du ou des Scientifiques Novices, Confirmés et Experts.
+•	Les travaux non publiés du ou des Scientifiques Novices, Confirmés et Experts.
+
+Le Webmaster n’aura pas d’accès aux : compléter la liste s’il y a lieu 
+
+Il s’agit, pour le Webmaster, de tâches de publication, de gestion des alertes remontées par les utilisateurs : données non visibles, ou visibles à tort
+Ce Webmaster, comme tout autre utilisateur de Oceanomics, devra s’engager à respecter les règles de confidentialité, dans la mesure où il aura accès à des informations qui doivent rester inconnues de l’Administrateur
+
+Ces points ci-dessus sont ouverts à discussion.
+ 
+
+3.	Création de compte
+
+Nous décrivons dans ce paragraphe le processus de création d’un compte en fonction des profiles utilisateurs, par qui ce processus doit être géré
+Ces processus s’appuieront sur une organisation hiérarchique forte, calquée sur les niveaux de qualification des équipes
+3.1.	Création d’un compte en fonction des profiles utilisateurs du projet Océanomics
+Nous décrivons ci-dessous le processus de création d’un compte en fonction des profiles utilisateurs, par qui ce processus doit être géré
+Ces processus s’appuieront sur une organisation hiérarchique forte, calquée sur les niveaux de qualification des équipes
+Dans un autre paragraphe, nous déclinerons ensuite, en fonction des profiles, les habilitations de ces utilisateurs, ce à quoi ils ont droit d’accéder, de réaliser et de produire
+
+3.1.1.	Description générale du processus de créations des utilisateurs (scientifiques)
+
+Dans le schéma de la page suivante, sont décrits les processus de créations pour les utilisateurs scientifiques (Experts, Confirmés et Novices).
+Les comptes « Administrateurs » et « Webmasters » sont quant à eux élaborés à l’initialisation de l’application.
+Le compte « Grand public » ne nécessite pas de procédure dédiée (cf. paragraphe 3.1.2 Compte Grand Public p22)
+
+
+ 
+Création de compte
+
+ 
+
+ 
+
+3.1.2.	Compte Grand Public
+Vu la nature de son profile, le compte Grand Public ne nécessite pas de procédure dédiée à la création d’un compte particulier Grand Public. 
+Toute personne se connectant de manière non sécurisée sur l’application aura par défaut ce profile
+Au niveau de l’application, il aura uniquement accès aux informations déjà mentionnées tel que des communications à caractère généraliste, à des photos, des articles, des images, des animations, des données déjà pré-calculées.
+Ce compte ne pourra pas créer des comptes de type Scientifique (quelque soit le niveau), encore moins Administrateur ou Webmaster   
+Pour les autres utilisateurs, nous pouvons imaginer un accès sécurisé de type intranet avec identification par login et mot de passe
+Nous développerons par la suite cette partie en insistant sur les aspects sécurité en termes d’accès, charte d’utilisation des données
+
+3.1.3.	Compte Scientifique Novice
+Le compte Utilisateur Scientifique Novice (SU1) est créé par un utilisateur de catégorie Utilisateur Scientifique Confirmé (SU2), ou par un utilisateur de catégorie Utilisateur Scientifique Expert (SU3) 
+
+Un mail de demande de création de compte Scientifique Novice doit être adressé par celui-ci à son supérieur Scientifique Confirmé
+Ce supérieur Scientifique Confirmé lui retournera alors un formulaire de création-inscription que le Scientifique Novice doit remplir en indiquant notamment une adresse email professionnelle dont l’accès est sécurisé
+
+En cas d’absence du supérieur Scientifique Confirmé, il revient à son supérieur hiérarchique Scientifique Expert de lui retourner alors un formulaire qu’il doit remplir en indiquant notamment une adresse email professionnelle dont l’accès est sécurisé
+Le Scientifique Expert devra informer en parallèle le supérieur Scientifique Confirmé de l’avancement de la création du compte Scientifique Novice
+De même, le Scientifique Confirmé doit lui aussi tenir informé son supérieur Scientifique Expert de l’avancement de la création du compte Scientifique Novice
+
+Cet utilisateur Scientifique Novice (SU1) ne peut pas créer d’autres comptes équivalents à son niveau Scientifique Novice (SU1), ni par conséquent créer des comptes Scientifique Confirmé (SU2), Scientifique Expert (SU3), le compte Administrateur (ADM), et le compte Webmaster (WMS)
+
+3.1.4.	Compte Scientifique Confirmé
+Le compte Utilisateur Scientifique Confirmé (SU2) est créé par un utilisateur de catégorie Utilisateur Scientifique Expert (SU3)
+
+Un mail de demande de création de compte Scientifique Confirmé doit être adressé par celui-ci à son supérieur Scientifique Expert
+Ce supérieur Scientifique Expert lui retournera alors un formulaire de création-inscription que le Scientifique Confirmé en indiquant notamment une adresse email professionnelle dont l’accès est sécurisé
+
+Cet utilisateur Scientifique Confirmé (SU2) ne peut pas créer d’autres comptes équivalents à son niveau Scientifique Confirmé (SU2), ni par conséquent des comptes Scientifique Expert (SU3), le compte Administrateur (ADM), le compte Webmaster (WMS)
+Il peut par contre créer un ou plusieurs comptes Scientifique Novice (SU1)
+
+3.1.5.	Compte Scientifique Expert
+Le process de création du compte Utilisateur Scientifique Expert (SU3) se démarque des process de création des autres utilisateurs
+
+Les membres de Tara envoie une demande écrite (et non par mail) à un utilisateur de catégorie Administrateur (ADM)
+
+Cet Administrateur devra alors valider en retour cette demande écrite vers les équipes Tara, et envoyer ensuite un formulaire de création-inscription, que le Scientifique Expert devra remplir et retourner en indiquant notamment une adresse email professionnelle dont l’accès est sécurisé
+
+Cet utilisateur Scientifique Expert (SU3) ne peut pas créer d’autres comptes équivalents à son niveau Scientifique Expert (SU3), ni par conséquent le compte Administrateur (ADM) et le compte Webmaster (WMS)
+
+Il peut par contre créer un ou plusieurs comptes Scientifique Confirmé (SU2), ainsi que un ou plusieurs comptes Scientifique Novice (SU1)
+
+3.1.6.	Compte Administrateur
+Le compte Utilisateur Administrateur (ADM) est créé par défaut lors de la mise en place de l’application
+Cet utilisateur Administrateur (ADM) ne peut pas créer d’autres comptes équivalents à son niveau Administrateur (ADM)
+Il peut par contre créer un ou plusieurs comptes Scientifique Expert (SU3) : ce point est à approfondir
+Il ne peut pas créer un ou plusieurs comptes Scientifique Novice (SU1), ni un ou plusieurs comptes Scientifique Confirmé (SU2) 
+ 
+3.1.7.	Compte Webmaster
+Le compte Webmaster (WMS) est créé par un utilisateur de catégorie Administrateur (ADM) (point à approfondir)
+Nous pouvons imaginer qu’il n’y aura qu’un Webmaster voire maximum 2, pour assurer une continuité de service lors de congés. 
+Ce point est ouvert à discussion
+Cet utilisateur Webmaster (WMS) ne peut pas créer d’autres comptes équivalents à son niveau Webmaster (WMS)
+Il ne peut pas créer un ou plusieurs comptes Scientifique Novice (SU1), Scientifique Confirmé (SU2), Scientifique Expert (SU3), ou compte Administrateur (ADM)
+
+3.2.	Synthèse  création des comptes en fonction des profiles 
+
+Le tableau ci-dessous donne une synthèse de ce qui a été évoqué en termes de création de comptes en fonction des profiles
+La lecture se fait au niveau de la première colonne :
+La première colonne de gauche indique la création d’un compte « Par » un utilisateur : la source
+Les 6 colonnes de droite de la première ligne indique la destination de l’action d’un compte « Pour » créer un utilisateur : la cible
+
+
+Pour
+Par                         	Grand Public	Scientifique Novice	Scientifique Confirmé	Scientifique Expert	Admin	Webmaster
+Grand Public	NON	NON	NON	NON	NON	NON
+Scientifique Novice	NON	NON	NON	NON	NON	NON
+Scientifique Confirmé	NON	OUI, 1 ou plusieurs	NON	NON	NON	NON
+Scientifique Expert	NON	OUI, 1 ou plusieurs	OUI, 1 ou plusieurs	NON	NON	NON
+Admin	NON	NON	NON	OUI, 1 ou plusieurs (à approfondir)	NON	OUI, 1 seul, voire 2 (à approfondir)
+Webmaster	NON	NON	NON	NON	NON	NON
+
+Tableau Création des comptes 
+
+ 
+
+4.	Habilitation de compte
+Nous décrivons dans ce paragraphe le processus d’habilitation d’un compte en fonction des profiles utilisateurs, par qui ce processus doit être géré, quels sont les impacts et conséquences 
+
+Dans cette partie et par rapport au paragraphe des 6 profiles utilisateurs de l’application Oceanomics, nous allons approfondir l’accès aux données par rapport au profile de chacun : ce qui est permis en montée et en descente de hiérarchie
+
+
+4.1.	Habilitation d’un compte en fonction des profiles utilisateurs du projet Océanomics
+
+Nous décrivons ci-dessous le processus d’habilitation en fonction des profiles utilisateurs, et ce que cette habilitation aura comme conséquences sur leur domaine d’interventions : ce à quoi ils auront droit d’accéder, de réaliser, de produire, vis-à-vis d’eux-mêmes et des autres utilisateurs
+L’habilitation ouvrira (ou non) l’accès à certaines fonctionnalités suivant un accès en lecture seule, en création ou en modification
+Chaque utilisateur, quelque soit son profile (hors Grand Public), vu la nature sensible des recherches menées par Tara, devra signer une clause de confidentialité et de discrétion, un code de bonne conduite, un engagement moral
+
+La liste des fonctionnalités proposées est la suivante, ces fonctionnalités s’adressent à une cible scientifique dont les activités sont en rapport direct avec le projet Oceanomics
+Cette liste est ouverte à discussion et non exhaustive :
+?	Charte d’utilisation des données
+Engagement de respect d’une charte de confidentialité par rapport à l’activité de recherche 
+
+?	Données scientifiques :
+Accès aux résultats scientifiques sensibles mis en ligne
+Téléchargement de résultats scientifiques sensibles mis en ligne
+Création de données scientifiques sensibles
+Publication de données scientifiques sensibles
+Modification, (enrichissement, annotation) de données scientifiques sensibles
+
+?	Moteurs de calculs Océanomics
+Utilisation des moteurs de calculs Oceanomics sans modification de code source
+Modification des codes sources des moteurs de calculs Oceanomics
+Génération de nouveaux codes sources pour des moteurs de calculs Oceanomics
+
+?	Ressources
+Priorisation des ressources (temps de traitement, espace de stockage) par rapport au profile 
+
+Nous proposerons, dans les chapitres suivants, une priorisation dynamique en fonction des profiles présents sur les équipements
+
+4.1.1.	Habilitation Grand Public
+Nous avons précédemment vu que le profile Grand Public dispose de droits minimaux du point de vue scientifique et administratif. 
+Il n’y aura pas d’habilitation particulière à réaliser pour les utilisateurs Grand Public
+En termes d’habilitation pour les autres utilisateurs, le Grand public ne disposera d’aucunes possibilités, que ce soit pour les Scientifiques Novice, Confirmé, Expert, Administrateur, Webmaster
+
+Par rapport à la liste des fonctionnalités proposées, la situation sera très simple, le Grand Public n’aura le droit à rien par rapport aux activités à intérêts scientifiques :  
+?	Charte d’utilisation des données
+Engagement de respect d’une charte de confidentialité par rapport à l’activité de recherche : sans objet
+
+?	Données scientifiques :
+Accès aux résultats scientifiques sensibles mis en ligne : NON
+Téléchargement de résultats scientifiques sensibles mis en ligne : NON
+Création de données scientifiques sensibles : NON
+Publication de données scientifiques sensibles : NON	
+Modification, (enrichissement, annotation) de données scientifiques sensibles : NON
+
+?	Moteurs de calculs Océanomics
+Utilisation des moteurs de calculs Oceanomics sans modification de code source : NON
+Modification des codes sources des moteurs de calculs Oceanomics : NON
+Génération de nouveaux codes sources pour des moteurs de calculs Oceanomics : NON
+
+?	Ressources
+Priorisation des ressources (temps de traitement des moteurs de calcul, espace de stockage) par rapport au profile : NON
+
+4.1.2.	Habilitation Scientifique Novice
+L’habilitation du compte Utilisateur Scientifique Novice (SU1) est réalisée par un Utilisateur Scientifique Confirmé (SU2), ou par un Utilisateur Scientifique Expert (SU3)
+De manière générale, ce sera la même personne qui aura créé ce compte Utilisateur Scientifique Novice (SU1)
+Cet utilisateur Scientifique Novice (SU1) ne peut pas habiliter d’autres utilisateurs équivalents à son niveau Scientifique Novice (SU1), ni par conséquent habiliter des comptes Scientifique Confirmé (SU2), Scientifique Expert (SU3), de compte Administrateur (ADM) et de compte Webmaster (WMS)
+
+Par rapport à la liste des fonctionnalités proposées au début de cette section, l’utilisateur Scientifique Novice aura les droits suivants :  
+?	Charte d’utilisation des données
+Engagement de respect d’une charte de confidentialité par rapport à l’activité de recherche : OUI
+
+?	Données scientifiques :
+Accès aux résultats scientifiques sensibles mis en ligne : OUI
+Téléchargement de résultats scientifiques sensibles mis en ligne : NON (A CONFIRMER)
+Création de données scientifiques sensibles : NON
+Publication de données scientifiques sensibles : NON
+Modification, (enrichissement, annotation) de données scientifiques sensibles : NON
+
+?	Moteurs de calculs Océanomics
+Utilisation des moteurs de calculs Oceanomics sans modification de code source : OUI
+Modification des codes sources des moteurs de calculs Oceanomics : NON
+Génération de nouveaux codes sources pour des moteurs de calculs Oceanomics : A STATUER
+
+?	Ressources
+Priorisation des ressources (temps de traitement des moteurs de calcul, espace de stockage) par rapport au profile : NON
+
+REMARQUES : Cette liste de droits ci-dessus est bien entendu ouverte à discussion
+ 
+4.1.3.	Habilitation Scientifique Confirmé
+L’habilitation du compte Utilisateur Scientifique Confirmé (SU2) est réalisée par un Utilisateur Scientifique Expert (SU3)
+De manière générale, ce sera la même personne qui aura créé ce compte Utilisateur Scientifique Confirmé (SU2)
+Cet utilisateur Scientifique Confirmé (SU2) ne peut pas habiliter d’autres utilisateurs équivalents à son niveau Scientifique Confirmé (SU2), ni par conséquent habiliter des comptes Scientifique Expert (SU3), de compte Administrateur (ADM) et de compte Webmaster (WMS)
+Il peut par contre habiliter un ou plusieurs comptes Scientifique Novice (SU1)
+
+Par rapport à la liste des fonctionnalités proposées au début de cette section, l’utilisateur Scientifique Confirmé aura les droits suivants :  
+?	Charte d’utilisation des données
+Engagement de respect d’une charte de confidentialité par rapport à l’activité de recherche : OUI
+
+?	Données scientifiques :
+Accès aux résultats scientifiques sensibles mis en ligne : OUI
+Téléchargement de résultats scientifiques sensibles mis en ligne : OUI
+Création de données scientifiques sensibles : OUI (A CONFIRMER)
+Publication de données scientifiques sensibles : OUI (A CONFIRMER)
+Modification, (enrichissement, annotation) de données scientifiques sensibles : OUI (A CONFIRMER)
+
+?	Moteurs de calculs Océanomics
+Utilisation des moteurs de calculs Oceanomics sans modification de code source : OUI
+Modification des codes sources des moteurs de calculs Oceanomics : OUI (A CONFIRMER)
+Génération de nouveaux codes sources pour des moteurs de calculs Oceanomics : OUI (A CONFIRMER)
+
+?	Ressources
+Priorisation des ressources (temps de traitement des moteurs de calcul, espace de stockage) par rapport au profile : OUI, DE MANIERE PARTIELLE : prioritaire par rapport aux Scientifiques Novices, non prioritaire par rapport aux Scientifiques Experts et aux Administrateurs
+
+REMARQUES : Cette liste de droits ci-dessus est bien entendu ouverte à discussion
+4.1.4.	Habilitation Scientifique Expert
+L’habilitation du compte Utilisateur Scientifique Expert (SU3) est réalisée par un Administrateur (ADM)
+De manière générale, ce sera la même personne qui aura créé ce compte Utilisateur Scientifique Expert (SU3)
+Cet utilisateur Scientifique Expert (SU3) ne peut pas habiliter d’autres utilisateurs équivalents à son niveau Scientifique Expert (SU3), ni par conséquent habiliter de compte Administrateur (ADM) et de compte Webmaster (WMS)
+
+Il peut par contre habiliter un ou plusieurs comptes Scientifique Confirmé (SU2), et habiliter aussi un ou plusieurs comptes Scientifique Novice (SU1)
+
+Par rapport à la liste des fonctionnalités proposées au début de cette section, l’utilisateur Scientifique Expert aura les droits suivants :  
+?	Charte d’utilisation des données
+Engagement de respect d’une charte de confidentialité par rapport à l’activité de recherche : OUI
+
+?	Données scientifiques :
+Accès aux résultats scientifiques sensibles mis en ligne : OUI
+Téléchargement de résultats scientifiques sensibles mis en ligne : OUI
+Création de données scientifiques sensibles : OUI
+Publication de données scientifiques sensibles : OUI
+Modification, (enrichissement, annotation) de données scientifiques sensibles : OUI
+
+?	Moteurs de calculs Océanomics
+Utilisation des moteurs de calculs Oceanomics sans modification de code source : OUI
+Modification des codes sources des moteurs de calculs Oceanomics : OUI
+Génération de nouveaux codes sources pour des moteurs de calculs Oceanomics : OUI
+
+?	Ressources
+Priorisation des ressources (temps de traitement des moteurs de calcul, espace de stockage) par rapport au profile : OUI, DE MANIERE PARTIELLE : prioritaire par rapport aux Scientifiques Novices et Scientifiques Experts, non prioritaire par rapport aux Administrateurs
+
+REMARQUES : Cette liste de droits ci-dessus est bien entendu ouverte à discussion
+4.1.5.	Habilitation Administrateur
+L’habilitation du compte Administrateur (ADM) est réalisée par lui-même, il possède les droits maximaux
+Cet utilisateur Administrateur (ADM) ne peut pas habiliter d’autres utilisateurs équivalents à ce profile Administrateur. 
+
+Cet utilisateur peut par contre habiliter un ou plusieurs comptes Scientifique Expert (SU3) : point à confirmer
+
+Par rapport à la liste des fonctionnalités proposées au début de cette section, l’utilisateur Administrateur aura les droits suivants :  
+?	Charte d’utilisation des données
+Engagement de respect d’une charte de confidentialité par rapport à l’activité de recherche : OUI
+
+?	Données scientifiques :
+Accès aux résultats scientifiques sensibles mis en ligne : NON
+Téléchargement de résultats scientifiques sensibles mis en ligne : NON
+Création de données scientifiques sensibles : OUI (à confirmer)
+Publication de données scientifiques sensibles : OUI (à confirmer)
+Modification, (enrichissement, annotation) de données scientifiques sensibles : NON
+
+?	Moteurs de calculs Océanomics
+Utilisation des moteurs de calculs Oceanomics sans modification de code source : OUI
+Modification des codes sources des moteurs de calculs Oceanomics : OUI
+Génération de nouveaux codes sources pour des moteurs de calculs Oceanomics : OUI
+
+?	Ressources
+Priorisation des ressources (temps de traitement des moteurs de calcul, espace de stockage) par rapport au profile : OUI, DE MANIERE TOTALE : prioritaire par rapport aux Scientifiques Novices, aux Scientifiques Confirmés, aux Scientifiques Experts, au Webmaster 
+
+REMARQUES : Cette liste de droits ci-dessus est bien entendu ouverte à discussion
+4.1.6.	Habilitation Webmaster
+L’habilitation du compte Webmaster (WMS) est réalisée par un utilisateur de catégorie Administrateur (ADM)
+De manière générale, ce sera la même personne qui aura créé ce compte Webmaster (WMS)
+Cet utilisateur Webmaster (WMS) ne peut pas habiliter d’autres utilisateurs équivalents à son niveau Webmaster (WMS), ni par conséquent habiliter des comptes Scientifique Novice (SU1),  Scientifique Confirmé (SU2), Scientifique Expert (SU3), des comptes Administrateur (ADM)
+
+Par rapport à la liste des fonctionnalités proposées au début de cette section, l’utilisateur Scientifique Novice aura les droits suivants :  
+?	Charte d’utilisation des données
+Engagement de respect d’une charte de confidentialité par rapport à l’activité de recherche : OUI
+
+?	Données scientifiques :
+Accès aux résultats scientifiques sensibles mis en ligne : OUI (A CONFIRMER)
+Téléchargement de résultats scientifiques sensibles mis en ligne : NON (A CONFIRMER)
+Création de données scientifiques sensibles : NON
+Publication de données scientifiques sensibles : OUI (A CONFIRMER)
+Modification, (enrichissement, annotation) de données scientifiques sensibles : NON
+
+?	Moteurs de calculs Océanomics
+Utilisation des moteurs de calculs Oceanomics sans modification de code source : OUI
+Modification des codes sources des moteurs de calculs Oceanomics : OUI
+Génération de nouveaux codes sources pour des moteurs de calculs Oceanomics : OUI
+
+?	Ressources
+Priorisation des ressources (temps de traitement des moteurs de calcul, espace de stockage) par rapport au profile : NON
+
+REMARQUES : Cette liste de droits ci-dessus est bien entendu ouverte à discussion
+
+4.2.	Synthèse  habilitation des comptes en fonction des profiles 
+
+Le premier tableau ci-dessous donne une synthèse de ce qui a été évoqué en termes d’habilitation de comptes en fonction des profiles
+La lecture se fait au niveau de la première colonne :
+La première colonne de gauche indique l’habilitation d’un compte « Par » un utilisateur : la source
+Les 6 colonnes de droite de la première ligne indique la destination de l’action d’une habilitation : « Pour » habiliter un utilisateur : la cible
+
+Pour
+Par                         	Grand Public	Scientifique Novice	Scientifique Confirmé	Scientifique Expert	Admin	Webmaster
+Grand Public	NON	NON	NON	NON	NON	NON
+Scientifique Novice	NON	NON	NON	NON	NON	NON
+Scientifique Confirmé	NON	OUI, 1 ou plusieurs	NON	NON	NON	NON
+Scientifique Expert	NON	OUI, 1 ou plusieurs	OUI, 1 ou plusieurs	NON	NON	NON
+Admin	NON	NON	NON	OUI, 1 ou plusieurs (à confirmer)	NON	OUI, 1 seul, voire 2 (à confirmer)
+Webmaster	NON	NON	NON	NON	NON	NON
+
+Tableau Habilitation des Utilisateurs
+
+Le deuxième tableau ci-dessous donne une synthèse de ce que l’habilitation aura comme conséquences sur leur domaine d’interventions : ce à quoi ils auront droit d’accéder, de réaliser, de produire, vis-à-vis d’eux-mêmes et des autres utilisateurs :
+
+Pour
+Par                         	Grand Public	Scientifique Novice	Scientifique Confirmé	Scientifique Expert	Admin	Webmaster
+Engagement respect charte confidentialité	
+Sans objet
+	
+OUI	
+OUI	
+OUI	
+OUI	
+OUI
+Accès résultats scientifiques sensibles	NON	OUI	OUI	OUI	NON	OUI
+Téléchargement données scientifiques sensibles	NON	NON	OUI	OUI	NON	NON (A CONFIRMER)
+Création résultats scientifiques sensibles	NON	NON	OUI (A CONFIRMER)	OUI	OUI (A CONFIRMER)	NON
+Publication données scientifiques sensibles	NON	NON	OUI (A CONFIRMER)	OUI	OUI (A CONFIRMER)	OUI (A CONFIRMER)
+Modification données scientifiques sensibles	NON	NON	OUI (A CONFIRMER)	OUI	NON	NON
+Utilisation moteurs calculs Océanomics sans modif code source	NON	OUI	OUI	OUI	OUI	NON
+Modification codes sources des moteurs calculs Océanomics 	NON	NON	OUI (A CONFIRMER)	OUI	OUI	NON
+Génération nouveaux  codes sources pour moteurs calculs Océanomics	NON	A STATUER	OUI (A CONFIRMER)	OUI	OUI	NON
+Priorisation des ressources	NON	NON	OUI, DE MANIERE PARTIELLE	OUI, DE MANIERE PARTIELLE	OUI, DE MANIERE TOTALE	NON
+
+Tableau Conséquence des Habilitations 
+ 
+
+5.	Activation de compte
+Nous décrivons dans ce paragraphe le processus d’activation d’un compte en fonction des profiles utilisateurs, par qui ce processus doit être géré, quels sont les impacts et conséquences
+
+5.1.	Activation d’un compte en fonction des profiles utilisateurs du projet Océanomics
+
+Le processus d’activation d’un compte fonctionnera sur le même principe pour les profiles Scientifique Novices, Scientifiques Confirmés et Scientifiques Experts
+
+Pour ces 3 types d’utilisateurs, ils recevront sur leur mail professionnel un lien sécurisé leur permettant d’activer leur compte préalablement créé par leur responsable hiérarchique
+
+Ces 3 types d’utilisateurs auront donc en charge l’activation de leur compte
+
+Un certain délai sera peut-être nécessaire pour que le compte soit pleinement opérationnel.
+A l’issue de l’activation de leur compte, un mail d’information d’activation (résultat positif ou négatif) sera envoyé à l’intéressé, à son supérieur hiérarchique, à l’Administrateur et au Webmaster
+
+
+Pour les profiles Administrateur et Webmaster, le process d’activation est géré au niveau livraison de l’applicatif Oceanomics. Ce point est à détailler et à approfondir
+
+Nous décrivons ci-dessous le processus d’activation en fonction des profiles utilisateurs
+Nous ne reviendrons pas ce à quoi ils ont droit d’accéder, de réaliser, de produire, eux-mêmes, et vis-à-vis des autres utilisateurs, ces points ont été vu au niveau de l’habilitation des profiles. Le fait d’activer un compte ne remettra pas en cause les habilitations et les conséquences de celles-ci
+5.1.1.	Activation Grand Public
+Nous avons précédemment vu que le profile Grand Public dispose de droits minimaux du point de vue scientifique et administratif. 
+Il n’y aura pas d’activation particulière à réaliser pour les utilisateurs Grand Public
+
+5.1.2.	Activation Scientifique Novice
+Le Scientifique Novice recevra sur son mail professionnel un lien sécurisé permettant d’activer son compte préalablement créé par un Scientifique Confirmé ou par un Scientifique Expert
+
+Il activera donc lui-même son propre compte. A sa première connexion, il devra obligatoirement changer le mot de passe qui lui a été attribué par défaut. 
+Il recevra ce mot de passe suivant un process postal, ou tout autre process différent du mail
+
+Un certain délai sera peut-être nécessaire pour que le compte soit pleinement opérationnel.
+
+A l’issue de l’activation définitive de son compte, un mail d’information d’activation (résultat positif ou négatif) sera envoyé à l’intéressé, à son supérieur hiérarchique direct (Scientifique Confirmé) copie Scientifique Expert, à l’Administrateur et au Webmaster
+
+5.1.3.	Activation Scientifique Confirmé
+Le Scientifique Confirmé recevra sur son mail professionnel un lien sécurisé permettant d’activer son compte préalablement créé par un Scientifique Expert
+
+Il activera donc lui-même son propre compte. A sa première connexion, il devra obligatoirement changer le mot de passe qui lui a été attribué par défaut. 
+Il recevra ce mot de passe suivant un process postal, ou tout autre process différent du mail
+
+Un certain délai sera peut-être nécessaire pour que le compte soit pleinement opérationnel.
+
+A l’issue de l’activation définitive de son compte, un mail d’information d’activation (résultat positif ou négatif) sera envoyé à l’intéressé, à son supérieur hiérarchique direct (Scientifique Expert), à l’Administrateur et au Webmaster
+
+5.1.4.	Activation Scientifique Expert
+Le Scientifique Expert recevra sur son mail professionnel un lien sécurisé permettant d’activer son compte préalablement créé par un Administrateur
+
+Il activera donc lui-même son propre compte. A sa première connexion, il devra obligatoirement changer le mot de passe qui lui a été attribué par défaut. 
+Il recevra ce mot de passe suivant un process postal, ou tout autre process différent du mail
+
+Un certain délai sera peut-être nécessaire pour que le compte soit pleinement opérationnel.
+
+A l’issue de l’activation définitive de son compte, un mail d’information d’activation (résultat positif ou négatif) sera envoyé à l’intéressé, à l’Administrateur et au Webmaster
+
+5.1.5.	Activation Administrateur
+Le process d’activation Administrateur fait partie du process de livraison de l’application Oceanomics
+
+Il recevra ce mot de passe suivant un process postal, ou tout autre process différent du mail
+
+Un certain délai sera peut-être nécessaire pour que le compte soit pleinement opérationnel.
+
+A l’issue de l’activation définitive de son compte, un mail d’information d’activation (résultat positif ou négatif) sera envoyé à l’intéressé et au Webmaster
+
+Ce point est à développer/valider/clarifier
+
+5.1.6.	Activation Webmaster
+Le Webmaster recevra sur son mail professionnel un lien sécurisé permettant d’activer son compte préalablement créé par un Administrateur (point à confirmer)
+
+Il activera donc lui-même son propre compte. A sa première connexion, il devra obligatoirement changer le mot de passe qui lui a été attribué par défaut. 
+Il recevra ce mot de passe suivant un process postal, ou tout autre process différent du mail
+
+Un certain délai sera peut-être nécessaire pour que le compte soit pleinement opérationnel.
+
+A l’issue de l’activation définitive de son compte, un mail d’information d’activation (résultat positif ou négatif) sera envoyé à l’intéressé et à l’Administrateur
+
+5.2.	Synthèse  Activation des comptes en fonction des profiles 
+
+Le tableau ci-dessous donne une synthèse de ce qui a été évoqué en termes d’activation de comptes en fonction des profiles
+La lecture se fait au niveau de la première colonne :
+La première colonne de gauche indique l’activation d’un compte « Par » un utilisateur : la source
+Les 6 colonnes de droite de la première ligne indique la destination de l’action d’une activation : « Pour » activer un utilisateur : la cible
+
+Pour
+Par                         	Grand Public	Scientifique Novice	Scientifique Confirmé	Scientifique Expert	Admin	Webmaster
+Grand Public	NON	NON	NON	NON	NON	NON
+Scientifique Novice	NON	OUI	NON	NON	NON	NON
+Scientifique Confirmé	NON	NON	OUI	NON	NON	NON
+Scientifique Expert	NON	NON	NON	OUI	NON	NON
+Admin	NON	NON	NON	OUI	A REVOIR	NON
+Webmaster	NON	NON	NON	NON	NON	OUI
+
+ 
+
+6.	Evolution de compte
+Nous décrivons dans ce paragraphe le processus d’évolution d’un compte en fonction des profiles utilisateurs, par qui ce processus doit être géré, quels sont les impacts et conséquences 
+
+Par évolution d’un compte, il faut comprendre soit la mise à jour des données personnelles d’un compte, soit le fait de changer de catégorie de profile
+
+La mise à jour des données personnelles,  pour les profiles Scientifiques Novices, Scientifiques Confirmés, Scientifiques Experts, Administrateur et Webmaster, est à la charge personnelle de celles-ci.
+Chaque supérieur hiérarchique (hors Webmaster) ne pourra ni accéder en lecture, ni modifier les données personnelles de ses subordonnées
+Ils n’auront accès qu’à l’adresse email professionnel indiquée par l’intéressé
+
+Le Webmaster accèdera en lecture seule aux données personnelles de tous les utilisateurs
+Le Webmaster ne pourra pas modifier les données personnelles de tous les utilisateurs
+
+Le changement de catégorie d’un utilisateur ne se fera que suivant des cas fonctionnels bien précis, en quantité assez limités, en premier approche. 
+Nous supposerons que ce changement se fera toujours dans le sens ascendant côté hiérarchique : le Scientifique Novice devient Scientifique Confirmé 
+Il ne sera pas possible de franchir 2 degrés hiérarchique en une seule fois : un Scientifique Novice ne pourra pas devenir Scientifique Expert
+
+Les conséquences de ces changements, par qui ce processus doit être géré, quels sont les impacts et conséquences, seront détaillés sur la phase de changement 
+
+Une fois le changement de profile effectué, il faudra alors effectuer une habilitation par rapport à la cible atteinte par l’utilisateur par son nouveau responsable hiérarchique. Le détail a déjà été exposé dans la partie « Habilitation », ce détail ne sera pas redéveloppé 
+
+6.1.	Evolution d’un compte en fonction des profiles utilisateurs du projet Océanomics
+6.1.1.	Description générale du processus d’évolution des utilisateurs (scientifiques)
+
+Dans le schéma de la page suivante, sont décrits les processus d’évolutions pour les utilisateurs scientifiques (Expert, confirmés et novice).
+Les comptes « Administrateurs » et « Webmasters » sont quant à eux élaborés à l’initialisation de l’application.
+Le compte « Grand public » ne nécessite pas de procédure dédiée.
+
+ 
+Evolution de compte
+ 
+
+ 
+
+6.1.2.	Evolution du compte Grand Public
+Nous avons précédemment vu que le profile Grand Public dispose de droits minimaux du point de vue scientifique et administratif. 
+Il n’y aura pas d’évolution particulière à réaliser pour les utilisateurs Grand Public : ils resteront dans le domaine Grand Public
+6.1.3.	Evolution du compte Scientifique Novice vers Scientifique Confirmé
+L’évolution possible du compte Scientifique Novice vers Scientifique Confirmé se fera à l’issue de l’obtention de la thèse par l’intéressé
+
+Le responsable hiérarchique Scientifique Confirmé doit contacter son responsable Scientifique Expert pour signaler l’évolution du Scientifique Ex-Novice vers le statut Nouveau Scientifique Confirmé
+
+Le Scientifique Expert devient alors le nouveau responsable hiérarchique du Scientifique nouveau confirmé
+
+Ce nouveau Scientifique Confirmé recevra un mail officialisant son évolution de compte
+
+Il faudra voir alors comment seront gérés ses anciens travaux de sa source vers sa nouvelle cible : partie à détailler
+
+6.1.4.	Evolution du compte Scientifique Confirmé vers Scientifique Expert
+L’évolution possible du compte Scientifique Confirmé vers Scientifique Expert se fera à l’issue d’une proposition écrite faite par des membres de Tara vers un membre Administrateur. Ces membres Tara jugent alors digne de changer de catégorie le scientifique Confirmé
+
+Le ou les responsables hiérarchique Scientifique Expert doit contacter un responsable Administrateur pour signaler l’évolution du Scientifique Ex-Confirmé vers le statut Nouveau Scientifique Expert
+
+Ce nouveau Scientifique Expert recevra un mail officialisant son évolution de compte
+
+Il faudra voir alors comment seront gérés ses anciens travaux de sa source vers sa nouvelle cible : partie à détailler
+
+6.1.5.	Evolution du compte Administrateur
+L’évolution possible du compte Administrateur vers un autre profile est à développer : dans quel cas fonctionnel cela se produit-il ?
+Il semblerait que non, le rôle d’Administrateur ne permet pas d’évoluer vers un autre rôle 
+6.1.6.	Evolution du compte Webmaster
+L’évolution possible du compte Webmaster vers un autre profile est à développer : dans quel cas fonctionnel cela se produit-il ?
+Il semblerait que non, le rôle de Webmaster ne permet pas d’évoluer vers un autre rôle 
+
+ 
+
+7.	Suppression de compte
+Nous décrivons dans ce paragraphe le processus de suppression d’un compte en fonction des profiles utilisateurs, par qui ce processus doit être géré, quels sont les impacts et conséquences 
+7.1.	Suppression d’un compte en fonction des profiles utilisateurs du projet Océanomics
+
+Nous décrivons ci-dessous le processus de suppression d’un compte en fonction des profiles utilisateurs, ce à quoi ils ont droit d’accéder, de réaliser, de produire, eux-mêmes, et vis-à-vis des autres utilisateurs
+
+Cette suppression ne correspond pas à l’évolution évoquée lors de la précédente partie : un événement fait que l’activité de l’intéressé cesse sur le projet Oceanomics
+
+Pour les comptes Scientifiques Novices, Scientifiques Confirmés et Scientifiques Experts, les accès nominatifs de ces utilisateurs seront supprimés
+
+Par contre, la totalité des travaux, calculs, échanges de données, brouillons, travaux publiés et non publiés seront conservés dans l’environnement Oceanomics
+
+Le principal intéressé recevra un mail d’alerte lui demandant s’il souhaite publier les travaux non encore effectués, conserver ses brouillons, léguer ces 2 derniers éléments à son supérieur hiérarchique. Cela dépendra de son profile 
+ 
+7.1.1.	Description générale du processus de suppression de comptes utilisateurs (scientifiques)
+
+Dans le schéma de la page suivante, sont décrits les processus de fermetures de comptes utilisateurs scientifiques (Expert, confirmés et novice).
+Le compte « Grand public » ne nécessite pas de procédure dédiée.
+
+ 
+Fermeture de compte
+ 
+
+ 
+
+7.1.2.	Suppression du compte Grand Public
+Nous avons précédemment vu que le profile Grand Public dispose de droits minimaux du point de vue scientifique et administratif. 
+Il n’y aura pas de suppression possible pour les utilisateurs Grand Public, sans remettre gravement en cause la définition même du projet Oceanomics
+
+7.1.3.	Suppression du compte Scientifique Novice
+Cette suppression est à l’initiative d’un Scientifique Expert ou d’un Scientifique Confirmé
+Elle se déroulera à la suite de la fin d‘activité du scientifique en temps que Novice
+L’intéressé recevra un mail d’alerte le prévenant quelques semaines avant son départ officiel où il lui sera signifié :
+•	S’il souhaite publier les données non encore validées de son côté
+•	S’il souhaite conserver ses brouillons
+•	S’il souhaite faire du ménage dans ses échanges, calculs, résultats
+•	Que toutes ses données (brouillons + résultats publiés+ calculés non publiés) seront récupérées par son supérieur hiérarchique direct Scientifique Confirmé
+
+7.1.4.	Suppression du compte Scientifique Confirmé
+Cette suppression est à l’initiative d’un Scientifique Expert 
+Elle se déroulera à la suite de la fin d‘activité du scientifique en temps que Confirmé
+L’intéressé recevra un mail d’alerte le prévenant quelques semaines avant son départ officiel où il lui sera signifié :
+•	S’il souhaite publier les données non encore validées de son côté
+•	S’il souhaite conserver ses brouillons
+•	S’il souhaite faire du ménage dans ses échanges, calculs, résultats
+•	Que toutes ses données (résultats publiés) seront récupérées par son supérieur hiérarchique direct Scientifique Expert
+•	Que toutes ses données (brouillons + calculés non publiés) seront récupérées par son supérieur hiérarchique direct Scientifique Expert, s’il ne s’y oppose pas. Il est parfaitement libre de supprimer ses données brouillons + calculés non publiés 
+
+7.1.5.	Suppression du compte Scientifique Expert
+Cette suppression est à l’initiative d’un Scientifique Expert ou d’un Administrateur (point à confirmer)
+Elle se déroulera à la suite de la fin d‘activité du scientifique en temps que Expert
+L’intéressé recevra un mail d’alerte le prévenant quelques semaines avant son départ officiel où il lui sera signifié :
+•	S’il souhaite publier les données non encore validées de son côté
+•	S’il souhaite conserver ses brouillons
+•	S’il souhaite faire du ménage dans ses échanges, calculs, résultats
+•	Que toutes ses données (résultats publiés) seront récupérées par un autre Scientifique Expert
+•	Que toutes ses données (brouillons + calculés non publiés) seront récupérées par un autre Scientifique Expert, s’il ne s’y oppose pas. Il est parfaitement libre de supprimer ses données brouillons + calculés non publiés 
+
+7.1.6.	Suppression du compte Administrateur
+Cette suppression du compte Administrateur n’est pas possible. Tout au plus, il sera possible d’attribuer et de transmettre cette charge d’Administrateur d’une personne vers une autre
+
+7.1.7.	Suppression du compte Webmaster
+Cette suppression du compte Webmaster n’est pas possible. Tout au plus, il sera possible d’attribuer et de transmettre cette charge de Webmaster d’une personne vers une autre
+ 
+
+8.	Pondération hiérarchique
+Nous décrivons dans ce paragraphe le processus de pondération hiérarchique dynamique qui sera mis en place pour le projet Oceanomics
+
+8.1.	Pondération hiérarchique dynamique des traitements en fonction des profiles utilisateurs du projet Océanomics
+
+Nous avons vu qu’une des caractéristiques majeurs de ce projet est l’aspect organisationnel fortement marqué hiérarchiquement par rapport aux profiles des utilisateurs de ce projet
+
+Ce principe s’appliquera aussi dans la mise en place de processus de pondération hiérarchique dynamique des traitements. 
+Un algorithme de calibrage de charges sera mis en œuvre, qui prendra en compte en entrée les profiles présents sur Océnomics.
+En sortie, un ordonnanceur lancera les différentes tâches (consultations par requête, calculs) à réaliser en priorisant celles-ci en fonction des profiles des différents utilisateurs et par rapport à la quantité globale d’utilisateurs  connectés sur l’environnement du projet Oceanomics.
+Ce genre de priorisation de traitement existe sous une forme voisine dans certaines bases de données (de type Teradata par exemple), certaines ressources en base de données pouvant être totalement attribuée à des utilisateurs
+Dans le cadre du projet Oceanomics, le processus sera un peu différent, dans la mesure où cette dynamique d’attribution des priorités devra être flexible, sera constamment ré-évaluée et s’appliquera aussi bien sur la partie calculs de données que sur les requêtes en base de données. 
+Une affectation des ressources se fera en fonction des privilèges des utilisateurs présents sur l’environnement Océanomics. 
+Par exemple si 2 profiles sont connectés : un utilisateur Scientifique Novice et un utilisateur Expert sont connectés, la priorité sera donnée à l’utilisateur Scientifique Expert pour ses traitements (calculs, consultation, MAJ en base) par rapport aux traitements du Scientifique Novice
+Mais si le Scientifique Novice n’est que le seul utilisateur, une priorité, cependant bridée, lui sera attribué dynamiquement sur ses traitements 
+
+Nous allons balayer les profiles et voir quelles seront les priorités entre ceux-ci 
+
+8.1.1.	Priorisation du profile Grand Public
+Nous avons précédemment vu que le profile Grand Public dispose de droits minimaux du point de vue scientifique et administratif. 
+Le compte Grand Public sera considéré comme devant avoir les ressources de priorisation les plus basses possibles, quelque soit les autres profiles connectés sur l’environnement Oceanomics et quelque soit les circonstances
+
+8.1.2.	Priorisation du profile Scientifique Novice
+
+Les traitements d’un Scientifique Novice seront traités avec la même égalité si un ou plusieurs autres profile Scientifique Novice sont déjà connectés
+
+Les traitements d’un Scientifique Novice seront prioritaires par rapport aux traitements des utilisateurs du profile :
+•	Grand Public
+
+Les traitements d’un Scientifique Novice ne seront pas prioritaires par rapport aux traitements des utilisateurs du profile :
+•	Scientifique Confirmé
+•	Scientifique Expert
+•	Administrateur
+•	Webmaster
+
+
+
+8.1.3.	Priorisation du profile Scientifique Confirmé
+Les traitements d’un Scientifique Confirmé seront traités avec la même égalité si un ou plusieurs autres profile Scientifique Confirmé sont déjà connectés
+
+Les traitements d’un Scientifique Confirmé seront prioritaires par rapport aux traitements des utilisateurs du profile :
+•	Grand Public
+•	Scientifique Novice
+•	Webmaster (à débattre)
+
+Les traitements d’un Scientifique Confirmé ne seront pas prioritaires par rapport aux traitements des utilisateurs du profile :
+•	Scientifique Expert
+•	Administrateur
+
+8.1.4.	Priorisation du profile Scientifique Expert
+Les traitements d’un Scientifique Expert seront traités avec la même égalité si un ou plusieurs autres profile Scientifique Expert sont déjà connectés
+
+Les traitements d’un Scientifique Expert seront prioritaires par rapport aux traitements des utilisateurs du profile :
+•	Grand Public
+•	Scientifique Novice
+•	Scientifique Confirmé
+•	Webmaster (à débattre)
+
+Les traitements d’un Scientifique Expert ne seront pas prioritaires par rapport aux traitements des utilisateurs du profile :
+•	Administrateur
+8.1.5.	Priorisation du profile Administrateur
+Les traitements d’un profil Administrateur seront traités avec la même égalité si un ou plusieurs autres profile Administrateur sont déjà connectés
+
+Les traitements d’un Administrateur seront prioritaires par rapport aux traitements des utilisateurs du profile :
+•	Grand Public
+•	Scientifique Novice
+•	Scientifique Confirmé
+•	Scientifique Expert
+•	Webmaster
+
+Les traitements d’un Administrateur seront donc toujours prioritaires par rapport aux traitements des autres profiles
+8.1.6.	Priorisation du profile Webmaster
+Les traitements d’un Webmaster seront traités avec la même égalité si un autre profile Webmaster est déjà connecté
+
+Les traitements d’un Webmaster seront prioritaires par rapport aux traitements des utilisateurs du profile :
+•	Grand Public
+•	Scientifique Novice
+•	Scientifique Confirmé
+
+Les traitements d’un Webmaster ne seront pas prioritaires par rapport aux traitements des utilisateurs du profile :
+•	Scientifique Expert
+•	Administrateur
+
+8.2.	Synthèse  priorisation hiérarchique dynamique des traitements en fonction des profiles 
+Le tableau ci-dessous donne une synthèse de ce qui a été évoqué en termes de priorisation hiérarchique dynamique des traitements en fonction des profiles des utilisateurs
+La lecture se fait au niveau de la première colonne :
+La première colonne de gauche indique le profile utilisateur source, et dans le sens « Est <contenu du croisement>prioritaire par rapport à »
+Les 6 colonnes de droite de la première ligne indiquent le profile utilisateur concurrent, à savoir la cible
+
+Cible
+Source                       	Grand Public	Scientifique Novice	Scientifique Confirmé	Scientifique Expert	Admin	Webmaster
+Grand Public	AUTANT	MOINS	MOINS	MOINS	MOINS	MOINS
+Scientifique Novice	PLUS	AUTANT	MOINS	MOINS	MOINS	MOINS
+Scientifique Confirmé	PLUS	PLUS	AUTANT	MOINS	MOINS	PLUS
+Scientifique Expert	PLUS	PLUS	PLUS	AUTANT	MOINS	PLUS
+Admin	PLUS	PLUS	PLUS	PLUS	AUTANT	PLUS
+Webmaster	PLUS	PLUS	PLUS	MOINS	MOINS	AUTANT
+
+Tableau des priorisations des traitements par rapport aux profiles des utilisateurs
+ 
+
+9.	Annexes
+9.1.	Documents de référence
+9.2.	Autre paragraphe
+
+
+ 
+A.	Introduction 
+
+B.	Historique des projets du DC
+
+

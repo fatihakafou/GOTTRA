@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="fragments/layout">
+<head>
+      <title>Error 500</title>
+</head>
+<body>
+   <section layout:fragment="content">
+   <meta charset="utf-8">
+    <h1>Error 500</h1>
+    Problème interne au serveur. Veuillez vérifier votre code. Analyser la log pour identifier le problème.
+    <p><a href="/" th:href="@{/}">Back to home page</a></p>
+</section>
+</body>
+</html>

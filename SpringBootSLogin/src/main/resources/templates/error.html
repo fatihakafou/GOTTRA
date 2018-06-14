@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <title>Error</title>       <meta charset="UTF-8"/>
+
+        <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+         
+    </head>
+    <body>
+     <div th:replace="fragments/headerGottra :: header"> </div>
+     <div class="container">
+         <br></br>
+		 <br></br>
+		 <br></br>
+          <h1>Error occurs</h1>      
+             
+          <br/>
+          <br/>      
+          <div>
+             <ul th:if="${#fields.hasErrors('*')}">
+  				<li th:each="err : ${#fields.errors('*')}" th:text="${err}">Input is incorrect</li>
+			 </ul>
+			 <ul>
+  				<li th:each="err : ${#fields.errors('*')}" th:text="${err}" />
+			 </ul>
+           </div> 
+            <br></br>
+       		<br></br>     
+       </div>
+
+       <div th:replace="fragments/footer :: footer">&copy; 2016 The Static Templates</div> 
+      </body>
+  </html>
